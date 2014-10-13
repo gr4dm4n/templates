@@ -1,0 +1,55 @@
+Well in a file animal.js you would write:
+
+var method = Animal.prototype;
+
+function Animal(age) {
+    this._age = age;
+}
+
+method.getAge = function() {
+    return this._age;
+};
+
+module.exports = Animal;
+
+To use it in other file:
+
+var Animal = require("./animal.js");
+
+var john = new Animal(3);
+
+If you want a "sub class" then inside mouse.js:
+
+var _super = require("./animal.js").prototype,
+    method = Mouse.prototype = Object.create( _super );
+
+method.constructor = Mouse;
+
+function Mouse() {
+    _super.constructor.apply( this, arguments );
+}
+//Pointless override to show super calls
+//note that for performance (e.g. inlining the below is impossible)
+//you should do
+//method.$getAge = _super.getAge;
+//and then use this.$getAge() instead of super()
+method.getAge = function() {
+    return _super.getAge.call(this);
+};
+
+module.exports = Mouse;
+
+Also you can consider "Method borrowing" instead of vertical inheritance. You don't need to inherit from a "class" to use its method on your class. For instance:
+
+ var method = List.prototype;
+ function List() {
+
+ }
+
+ method.add = Array.prototype.push;
+
+ ...
+
+ var a = new List();
+ a.add(3);
+ console.log(a[0]) //3;

@@ -1,0 +1,42 @@
+/* DOCUMENT INFORMATION
+	- Document: Main style css
+	- Version:  1
+	- Client:   Home center
+	- Author:   Victor Chavarro
+	- Date:     20140819
+*/
+
+/* COLORS
+	- default body text  #ffffcc
+	- subtitle h2 text   #ff9900
+	- form input borders #cc9933
+	- default p text     #f0f0f0
+	- pre borders        #ffff99
+*/
+
+/* FONTS
+	- default body text:  misoregular;
+	- headers, price, strong, price: misobold;
+*/
+
+/* CSS DIRECTORY
+	1. =RESET
+	2. =FONTS
+	3. =PRIMARY
+*/
+
+/* -----------------------------------*/
+/* --------->>> 1. RESET <<<----------*/
+/* -----------------------------------*/
+@import url("reset.css");
+
+/* -----------------------------------*/
+/* --------->>> 1. FONTS <<<----------*/
+/* -----------------------------------*/
+@import url("fonts.css");
+
+
+/* -----------------------------------*/
+/* -------->>> 2. PRIMARY <<<---------*/
+/* -----------------------------------*/
+

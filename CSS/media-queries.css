@@ -1,0 +1,106 @@
+media queries
+
+Max Width
+
+The following CSS will apply if the viewing area is smaller than 600px.
+
+@media screen and (max-width: 600px) {
+  .class {
+    background: #ccc;
+  }
+}
+
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" />
+
+----------------------------------------------------------------------------------
+
+Min Width
+
+The following CSS will apply if the viewing area is greater than 900px.
+
+@media screen and (min-width: 900px) {
+  .class {
+    background: #666;
+  }
+}
+
+-----------------------------------------------------------------------------------
+
+Multiple Media Queries
+
+You can combine multiple media queries. The following code will apply if the viewing area is between 600px and 900px.
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .class {
+    background: #333;
+  }
+}
+
+-----------------------------------------------------------------------------------
+
+Device Width
+
+The following code will apply if the max-device-width is 480px (eg. iPhone display). Note: max-device-width means the actual resolution of the device and max-width means the viewing area resolution.
+
+@media screen and (max-device-width: 480px) {
+  .class {
+    background: #000;
+  }
+}
+
+-----------------------------------------------------------------------------------
+
+For iPhone 4
+
+The following stylesheet is specifically for iPhone 4 (credits: Thomas Maier).
+
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" type="text/css" href="iphone4.css" />
+
+
+For iPad
+
+You can also use media query to detect orientation (portrait or landscapse) on the iPad (credits: Cloud Four).
+
+<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css"> 
+<link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css"
+
+
+
+
+
+---------------------------------------------------------------------------------
+
+complete template
+
+.center
+{
+	margin: 0 auto;
+	display: block;
+}
+.clear_both
+{
+	display: block;
+	clear: both;
+}
+
+@media screen and (max-width: 400px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
