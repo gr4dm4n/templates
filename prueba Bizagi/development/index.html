@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vacations">
+
+<head>
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" media="screen">
+
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script src="js/scripts.js" type="text/javascript"></script> 
+<script src="js/controller.js" type="text/javascript"></script> 
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller = "GetInboxController as inbox">
+
+<!-- MAIN WRAPPER -->
+<div id="wrapper">
+  
+    <!-- header -->
+    <header class="block box">
+      
+      <div id="logo" class="block left"><span>logo</span></div>
+
+      <div id="inbox-alert"> <span>Icon inbox alert</span> </div>
+      
+      <div id="user-menu" class="right block">
+          <img src="images/avatar.png" width="50" height="50"  alt="user avatart" class="left" />
+          <h1 class="left">Jefe Area</h1>
+          <div class="glyph-icon flaticon-arrow-down"></div>
+      </div>
+
+    </header>
+    <!--/header -->
+
+    <!-- breadcrom & message actions ( approve or deny messages ) -->
+    <div id="message-breadcrom-actions">
+
+      <div id="breadcrom" class="left col-md-2"><div class="glyph-icon flaticon-home11"></div><strong> Home / Vacation System /Inbox</strong></div>
+
+      <div id="button-actions" class="right block">
+        <div id="approve-button" class="button flaticon-checkmark2" title="Aceptar"><span>approve button</span></div>
+        <div id="deny-button" class="button flaticon-cross5" title="Rechazar"><span>deny button</span></div>
+      </div>
+      
+    </div>
+    <!-- message actions & message actions -->
+
+    <!-- MAIN CONTENT -->
+    <div id="main-container" class="container-fluid box block">
+
+      <!-- SIDEBAR -->
+      <div id="sidebar" class="col-md-2 col-xs-12">
+          <ul>
+              <li class="memu-active"> <div class="glyph-icon flaticon-download12 left"></div> Inbox </li>
+              <li> Logout </li>
+          </ul>
+      </div>
+      <!--/ SIDEBAR -->
+
+      <!-- MESSAGE AREA -->
+      <div id="messages" class="col-md-10 col-xs-12" >
+
+        <!-- message -->
+        <div ng-repeat="message in inbox.messages" ng-show="message.process=='Vacations'">
+          <inbox-messages></inbox-messages>
+        </div>
+        <!-- message -->
+
+      </div>
+      <!--/ MESSAGE AREA -->
+
+    </div>
+    <!--/ MAIN CONTENT -->
+
+
+</div>
+<!--/ MAIN WRAPPER -->
+
+<!-- footer -->
+<footer class="box block">
+  <h1>Victor Andres Chavarro Pérez</h1>
+</footer>
+<!--/ footer -->
+
+
+
+</body>
+</html>
+
+

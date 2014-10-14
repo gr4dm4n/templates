@@ -1,0 +1,12 @@
+{
+	"processId": "1",
+	"process": "Vacations",
+	"activityId": "2",
+	"activity": "Approval",
+	"requestDate": "2013-01-17",
+	"employee": "Xavi Hernandez",
+	"beginDate": "2013-12-23",
+	"endDate": "2013-12-24",
+	"lastVacationOn": "2012-06-01",
+	"approved": ""
+}

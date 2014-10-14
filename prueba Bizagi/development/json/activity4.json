@@ -1,0 +1,12 @@
+{
+	"processId": "1",
+	"process": "Vacations",
+	"activityId": "4",
+	"activity": "Approval",
+	"requestDate": "2013-02-25",
+	"employee": "Carles Puyol",
+	"beginDate": "2013-12-23",
+	"endDate": "2013-12-27",
+	"lastVacationOn": "2012-08-01",
+	"approved": ""
+}

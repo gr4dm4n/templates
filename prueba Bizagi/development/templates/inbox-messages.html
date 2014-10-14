@@ -1,0 +1,25 @@
+  <div ng-class="{'true':'message block box approved-message', 'false':'message block box deny-message','none':'message block box'}[message.approved]" >
+            
+    <div class="col-md-4 col-xs-7 checkbox">
+
+        <label class="from-user">
+          <input name="{{ 'activity-' + message.activityId }}" id="{{ 'activity-' + message.activityId }}" ng-show="message.approved=='none'" type="checkbox"><strong>Employee:</strong> {{message.employee}}.
+        </label>
+
+    </div>
+
+    <div class="col-md-4 col-xs-12 message-title"><b>Request Status:</b>  {{ {'true':'Approved', 'false':'Deny','none':'Waiting for approval'}[message.approved]}} </div>
+    <div class="col-md-3 col-xs-5 message-date">{{message.requestDate}}</div>
+
+    <!-- Message detail -->
+    <div class="message-detail block box ">        
+        <p><strong>Employee: </strong>{{message.employee}}</p>
+        <p><strong>Vacation request date:</strong> {{message.requestDate}}</p>
+        <p><strong>Last vacation:</strong> {{message.requestDate}}</p>
+        <p><strong>Vacation Start:</strong> {{message.beginDate}}</p>
+        <p><strong>Vacation End:</strong> {{message.endDate}}</p>
+        <p><strong>Number of Vacation days:</strong> {{inbox.CalulateVacationDays(message.beginDate,message.endDate )}}</p>
+    </div>
+    <!--/ Message detail -->
+
+  </div>
