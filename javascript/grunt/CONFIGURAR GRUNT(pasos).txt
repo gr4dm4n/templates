@@ -1,0 +1,11 @@
+1. Instalar NODE.JS
+2. npm install -g grunt //optional
+3. npm install -g grunt-cli
+4. go to the project folder
+5. npm init //create packa.json file
+6. npm install grunt --save-dev
+7. instal individual components
+8. npm install-contrib-jshint --save-dev
+9. create Gruntfile.js
+10. npm install -g grunt-init //permits creat init files in projects
+11. grunt-init file.js //optional
