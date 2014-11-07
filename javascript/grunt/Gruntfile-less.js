@@ -58,7 +58,8 @@ module.exports = function(grunt){
 
 	/*LIBRERIES*/
     grunt.loadNpmTasks('grunt-contrib-watch');  //watch changes and run task automatically
-    grunt.loadNpmTasks('grunt-contrib-sass'); // SASS compiler
+    grunt.loadNpmTasks('grunt-contrib-less'); // SASS compiler
+    grunt.loadNpmTasks('grunt-contrib-cssmin'); //minify css files
 
 
 };
