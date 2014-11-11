@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bodyParser',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json UsabilityTest@0.0.1 No repository field.
+6 warn package.json UsabilityTest@0.0.1 No README data
+7 warn package.json karma-coffee-preprocessor@0.2.1 No README data
+8 warn package.json karma-chrome-launcher@0.1.5 No README data
+9 warn package.json karma-coverage@0.2.6 No README data
+10 warn package.json karma-ie-launcher@0.1.5 No README data
+11 warn package.json karma-sauce-launcher@0.2.10 No README data
+12 warn package.json karma-phantomjs-launcher@0.1.4 No README data
+13 warn package.json compress@0.99.0 No repository field.
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'bodyParser', null ]
+16 verbose cache add name=undefined spec="bodyParser" args=["bodyParser",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'bodyParser',
+17 verbose parsed url   path: 'bodyParser',
+17 verbose parsed url   href: 'bodyParser' }
+18 silly lockFile caa4c3c7-bodyParser bodyParser
+19 verbose lock bodyParser C:\Users\Victorc\AppData\Roaming\npm-cache\caa4c3c7-bodyParser.lock
+20 silly lockFile caa4c3c7-bodyParser bodyParser
+21 silly lockFile caa4c3c7-bodyParser bodyParser
+22 verbose addNamed [ 'bodyParser', '' ]
+23 verbose addNamed [ null, '*' ]
+24 silly lockFile e0b6bd45-bodyParser bodyParser@
+25 verbose lock bodyParser@ C:\Users\Victorc\AppData\Roaming\npm-cache\e0b6bd45-bodyParser.lock
+26 silly addNameRange { name: 'bodyParser', range: '*', hasData: false }
+27 verbose request where is /bodyParser
+28 verbose request registry https://registry.npmjs.org/
+29 verbose request id ce97db984650094b
+30 verbose url raw /bodyParser
+31 verbose url resolving [ 'https://registry.npmjs.org/', './bodyParser' ]
+32 verbose url resolved https://registry.npmjs.org/bodyParser
+33 verbose request where is https://registry.npmjs.org/bodyParser
+34 info trying registry request attempt 1 at 16:32:16
+35 http GET https://registry.npmjs.org/bodyParser
+36 http 404 https://registry.npmjs.org/bodyParser
+37 verbose headers { date: 'Wed, 29 Oct 2014 21:32:03 GMT',
+37 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=0',
+37 verbose headers   'content-length': '52',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   age: '0',
+37 verbose headers   'x-served-by': 'cache-iad2122-IAD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1414618323.286637,VS0,VE11',
+37 verbose headers   'keep-alive': 'timeout=10, max=50',
+37 verbose headers   connection: 'Keep-Alive' }
+38 silly registry.get cb [ 404,
+38 silly registry.get   { date: 'Wed, 29 Oct 2014 21:32:03 GMT',
+38 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+38 silly registry.get     'content-type': 'application/json',
+38 silly registry.get     'cache-control': 'max-age=0',
+38 silly registry.get     'content-length': '52',
+38 silly registry.get     'accept-ranges': 'bytes',
+38 silly registry.get     via: '1.1 varnish',
+38 silly registry.get     age: '0',
+38 silly registry.get     'x-served-by': 'cache-iad2122-IAD',
+38 silly registry.get     'x-cache': 'MISS',
+38 silly registry.get     'x-cache-hits': '0',
+38 silly registry.get     'x-timer': 'S1414618323.286637,VS0,VE11',
+38 silly registry.get     'keep-alive': 'timeout=10, max=50',
+38 silly registry.get     connection: 'Keep-Alive' } ]
+39 silly lockFile e0b6bd45-bodyParser bodyParser@
+40 silly lockFile e0b6bd45-bodyParser bodyParser@
+41 error 404 404 Not Found: bodyParser
+41 error 404
+41 error 404 'bodyParser' is not in the npm registry.
+41 error 404 You should bug the author to publish it
+41 error 404 It was specified as a dependency of 'UsabilityTest'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, or http url, or git url.
+42 error System Windows_NT 6.2.9200
+43 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bodyParser" "--save-dev"
+44 error cwd C:\dev\100x\Source\BizAgiStudio\BizagiStudio.WebForms\scripts
+45 error node -v v0.10.33
+46 error npm -v 1.4.28
+47 error code E404
+48 verbose exit [ 1, true ]
