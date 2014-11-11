@@ -1,0 +1,2 @@
+in console:
+nom web-config.js
